@@ -21,8 +21,6 @@ This index.html is heavily relying on bootstrap styling, get comfortable at goin
 Sometimes it can help to 'collaspe' larger divs to find a particular div. 
 **you should NOT have to change anything in the index.html**
 
-![Image of Index.HTML](https://slack-files.com/T02MD9XTF-F01CTUD0DA5-347866595e)
-
 We have a static card already in our index.html, this is so you have a frame of reference, feel free to comment it out and dynamically add the other people from our fetch that way Raúl is on there twice(the world is not ready for two Raúls)
 
 ## Fetch and Update DOM with People 
