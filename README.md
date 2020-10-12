@@ -1,7 +1,7 @@
 # Raul's Rolodex
 
 Solo lab created for the purpose of practicing fetch. JSON data will include past alumni and instructors in an effort to showcase the underrepresented in tech. 
-
+This Lab is going to be a stretch, try timing yourself and see if you can finish this in an hour and a half for added difficulty.  
 
 ## Create Your Server
 
@@ -53,7 +53,7 @@ The `div` with class "card-body" has child elements:
   **All `p` tags have a class "card-text"**
   
 
-After all of that, the toy card should resemble:
+After all of that, the person card should resemble:
 
 ```html
   <div class="card p-2 m-2" style="width: 18rem;">
@@ -65,5 +65,23 @@ After all of that, the toy card should resemble:
               <p class="card-text">Attended Flatiron?  person_attended_flatiron </p>
               <a href= person_github_url class="btn btn-primary"> Go to person_first_name's GitHub </a>
             </div>
-          </div>
+  </div>
 ```
+
+
+## Add yourself with our Instructors/Alum
+
+* When a user submits the form, a `POST` request is sent to `http://localhost:3000/people` and the new person is added to our people collection.
+* In order to send a POST request via Fetch, give the Fetch a second argument of an object. This object should specify the method as `POST` and also provide the appropriate headers and the JSON-ified data for the request. I removed how a POST Request object should look like, please refer to your notes or previous lab-work.
+
+* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options).
+
+
+##Stretch Goals
+
+* Add an update button for every card
+* the button should make an edit form appear under the person's info, with one input to only update that person's name
+*changes should update the DOM and be persisted. 
+
+
+
