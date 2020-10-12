@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         let pronounText = document.createElement('p')
         let attendedText = document.createElement('p')
         let a = document.createElement('a')
+        let edit = document.createElement('a')
 
         cardDiv.classList.add('card', 'p-2', 'm-2')
         cardDiv.style.width = '18rem'
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         cardBody.classList.add('card-body')
         h5.className = 'card-title'
         h5.textContent = person.name
+        h5.setAttribute("id", "person"+person.id)
 
         instructorText.textContent = `Instructor or Alum? ${person['instructor?'] ? 'Instructor' : 'Alum'}`
         pronounText.textContent = ` Pronouns: ${person.pronouns}`
@@ -56,8 +58,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
         a.classList.add("btn", "btn-primary")
         a.href = person.github
         a.textContent = `Go to ${person.name.split(' ')[0]}'s GitHub`
+
+        edit.classList.add("btn", "alert", "alert-info")
+        edit.textContent = 'Edit This Person?'
+
+        edit.addEventListener('click', (e)=>{
+
+            // add form to update, which means we are making ANOTHER function to handle that
+            appendForm(cardBody, person.id)
+            // and update DOM
+            
+
+        }) //end of click
         // append elements
-        cardBody.append(h5, instructorText, pronounText, attendedText, a)
+        cardBody.append(h5, instructorText, pronounText, attendedText, a, edit)
         cardDiv.append(img, cardBody)
         // update DOM
         peopleContainer.append(cardDiv)
@@ -99,7 +113,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         // sending our POST request in another delegated function
         postNewPerson(person) 
         .then(res=>res.json())
-        .then(newPerson => createDevCard(newPerson)) //after response from server I want to update the DOM
+        .then(newPerson => {
+            createDevCard(newPerson)//after response from server I want to update the DOM
+            form.reset() //and reset our form
+        }) 
 
     }) // end of our form submit event
 
@@ -117,5 +134,42 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     } //end of postNewPerson
     
+    // begin appendForm function
+    function appendForm(div, id){
+        // create form elements
+        // and append them to our div
+        let editForm = document.createElement('form')
+        let editName = document.createElement('input')
+        editName.placeholder = 'Edit Name'
+        editForm.append(editName)
+        div.append(editForm)
+
+        editForm.addEventListener('submit',(e)=>{
+            e.preventDefault()
+
+            // send PATCH request
+            fetch(`${peopleURL}/${id}`,{
+                method:'PATCH',
+                headers: {
+                    "Content-Type":'application/json',
+                    "Accept":'appilcation/json'
+                },
+                body:JSON.stringify({
+                    name: e.target[0].value
+                })
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                let nameToBeUpdated = document.querySelector(`#person${id}`)
+                nameToBeUpdated.textContent = e.target[0].value
+                editForm.reset()
+                editForm.remove()
+            })
+
+
+        }) //end of editForm submit listener
+
+
+    }
 }) //end of DOMContentLoaded Listener
 
