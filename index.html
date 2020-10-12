@@ -14,22 +14,71 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<!-- requiring our index.js file in src folder -->
+<script src='src/index.js'></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Raul's Rolodex: A Celebration of Under-Represented People in Tech</h1>
-    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Raul's Rolodex: A Celebration of Under-Represented People in Tech</h1>
+        <hr class="my-4"/>
+        <h3>Load of past alum from our db.json file to the container below</h2>
 
-    <div class="container">
+    </div>
+    <div class="form-container p-5 mx-auto">
+        <h3>Add yourself to our people!</h3>
+        <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameInput">
+            </div>
+            <div class="form-group">
+                <label class="" for="inlineFormCustomSelect">Pronouns</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Pronouns</option>
+                  <option value="she/her">she/her</option>
+                  <option value="he/him">he/him</option>
+                  <option value="they/them">they/them</option>
+                  <option value="he/they">he/they</option>
+                  <option value="she/they">she/they</option>
+                  <option value="other">other</option>
+                </select>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+    </div>
+    <div class="mx-auto"  style="width: 500px;">
+        <h1 >Alum and Instructors Below! </h1>
+    </div>
+    <div class="container d-flex p-2" style="flex-wrap: wrap;">
         <!-- populate your people cards here -->
-        <div class="card" style="width: 18rem;">
+        <div class="card p-2 m-2" style="width: 18rem;">
             <img src="https://avatars3.githubusercontent.com/u/38088164?s=460&u=6310e60448617354cbecfb7ffcd30e691e095931&v=4" class="card-img-top" alt="Raul the Instructor">
             <div class="card-body">
               <h5 class="card-title">Raul Sanchez</h5>
               <p class="card-text">Instructor</p>
+              <p class="card-text">Prefered Pronouns: He/Him</p>
+              <p class="card-text">Attended Flatiron? No</p>
               <a href="https://github.com/rmsanchez93" class="btn btn-primary">Go to Raul's GitHub</a>
             </div>
           </div>
+
+          <div class="card p-2 m-2" style="width: 18rem;">
+            <img src="https://avatars3.githubusercontent.com/u/56845745?s=460&u=7974035c20f17528da0cd381492cb7a025d7392a&v=4" class="card-img-top" alt="Raul the Instructor">
+            <div class="card-body">
+              <h5 class="card-title">Joe Burks</h5>
+              <p class="card-text">Instructor</p>
+              <p class="card-text">Prefered Pronouns: He/Him</p>
+              <p class="card-text">Attended Flatiron? Yes!</p>
+              <a href="https://github.com/Joseph-Burks" class="btn btn-primary">Go to Joe's GitHub</a>
+            </div>
+          </div>
+          
 
 
           
