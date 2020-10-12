@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    console.log('Good Luck, Codevid-19!')
+    console.log('HTML is loaded!! good luck Texas SE-082420!')
 })
