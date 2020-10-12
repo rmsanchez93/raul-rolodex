@@ -77,7 +77,7 @@ After all of that, the person card should resemble:
 * For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options).
 
 
-##Stretch Goals
+## Stretch Goals
 
 * Add an update button for every card
 * the button should make an edit form appear under the person's info, with one input to only update that person's name
