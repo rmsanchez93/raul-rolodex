@@ -1,5 +1,3 @@
-const { create } = require("domain")
-
 document.addEventListener('DOMContentLoaded', ()=>{
     console.log('HTML is loaded!! good luck Texas SE-082420!')
     let peopleURL ="http://localhost:3000/people"
