@@ -25,75 +25,81 @@
         <h3>Load of past alum from our db.json file to the container below</h2>
 
     </div>
-    <!-- form container start -->
-    <div class="form-container p-5 mx-auto">
-        <h3>Add yourself to our Alum and Instructors!</h3>
-        <a class="btn btn-primary" data-toggle="collapse" href="#person-form" role="button" aria-expanded="false" aria-controls="collapseFormButton">Add a new person!</a>
-        <form id='person-form' class="collapse multi-collapse">
-            <br/>
-            <div class="form-group">
-              <label for="Name">Name</label>
-              <input type="text" class="form-control" id="name" aria-describedby="nameInput">
-            </div>
-            <div class="form-group">
-                <label for="Selecting Pronouns">Pronouns</label>
-                <select class="custom-select mr-sm-2" id="pronouns">
-                  <option selected>Pronouns</option>
-                  <option value="she/her">she/her</option>
-                  <option value="he/him">he/him</option>
-                  <option value="they/them">they/them</option>
-                  <option value="he/they">he/they</option>
-                  <option value="she/they">she/they</option>
-                  <option value="ze/zher/zhim">ze/zher/zhim</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="Alum?">Is this person an alum?</label>
-                <select class="custom-select mr-sm-2" id="alum">
-                  <option selected>Alum?</option>
-                  <option value="true">yes</option>
-                  <option value="false">no</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="Instructor?">Is this person an instructor?</label>
-                <select class="custom-select mr-sm-2" id="instructor">
-                  <option selected>Instructor?</option>
-                  <option value="true">yes</option>
-                  <option value="false">no</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="GitHub">GitHub</label>
-                <input type="text" class="form-control" id="github" aria-describedby="gitHubinput">
-            </div>
-            <div class="form-group">
-                <label for="Profile Picture URL">Profile Picture URL</label>
-                <input type="text" class="form-control" id="profile" aria-describedby="profilePictureInput">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    <!-- form container end -->
     
     <div class="mx-auto"  style="width: 500px;">
         <h1 >Alum and Instructors Below! </h1>
     </div>
-    <div id ="people" class="container d-flex p-2" style="flex-wrap: wrap;">
-        <!-- populate your people cards here -->
-        <div class="card p-2 m-2" style="width: 18rem;">
-            <img src="https://avatars3.githubusercontent.com/u/38088164?s=460&u=6310e60448617354cbecfb7ffcd30e691e095931&v=4" class="card-img-top" alt="Raul the Instructor">
-            <div class="card-body">
-              <h5 class="card-title">Raul Sanchez</h5>
-              <p class="card-text">Instructor</p>
-              <p class="card-text">Prefered Pronouns: He/Him</p>
-              <p class="card-text">Attended Flatiron? No</p>
-              <a href="https://github.com/rmsanchez93" class="btn btn-primary">Go to Raul's GitHub</a>
-            </div>
-          </div>
-
-          
-          
+    
+ 
+    
+    <div class="row">
+        <div id ="people" class="container col-8 d-flex p-4" style="flex-wrap: wrap;">
+            <!-- populate your people cards here -->
+            <div class="card p-2 m-2" style="width: 18rem;">
+                <img src="https://avatars3.githubusercontent.com/u/38088164?s=460&u=6310e60448617354cbecfb7ffcd30e691e095931&v=4" class="card-img-top" alt="Raul the Instructor">
+                <div class="card-body">
+                  <h5 class="card-title">Raul Sanchez</h5>
+                  <p class="card-text">Instructor</p>
+                  <p class="card-text">Prefered Pronouns: He/Him</p>
+                  <p class="card-text">Attended Flatiron? No</p>
+                  <a href="https://github.com/rmsanchez93" class="btn btn-primary">Go to Raul's GitHub</a>
+                </div>
+              </div>
+    
+              
+              
+    
+        </div>
+        <!-- form container start -->
+        <div class="form-container p-5 mx-auto col-4">
+            <h3>Add yourself to our Alum and Instructors!</h3>
+            <a class="btn btn-primary" data-toggle="collapse" href="#person-form" role="button" aria-expanded="false" aria-controls="collapseFormButton">Add a new person!</a>
+            <form id='person-form' class="collapse multi-collapse">
+                <br/>
+                <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameInput">
+                </div>
+                <div class="form-group">
+                    <label for="Selecting Pronouns">Pronouns</label>
+                    <select class="custom-select mr-sm-2" id="pronouns">
+                    <option selected>Pronouns</option>
+                    <option value="she/her">she/her</option>
+                    <option value="he/him">he/him</option>
+                    <option value="they/them">they/them</option>
+                    <option value="he/they">he/they</option>
+                    <option value="she/they">she/they</option>
+                    <option value="ze/zher/zhim">ze/zher/zhim</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Alum?">Is this person an alum?</label>
+                    <select class="custom-select mr-sm-2" id="alum">
+                    <option selected>Alum?</option>
+                    <option value="true">yes</option>
+                    <option value="false">no</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Instructor?">Is this person an instructor?</label>
+                    <select class="custom-select mr-sm-2" id="instructor">
+                    <option selected>Instructor?</option>
+                    <option value="true">yes</option>
+                    <option value="false">no</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="GitHub">GitHub</label>
+                    <input type="text" class="form-control" id="github" aria-describedby="gitHubinput">
+                </div>
+                <div class="form-group">
+                    <label for="Profile Picture URL">Profile Picture URL</label>
+                    <input type="text" class="form-control" id="profile" aria-describedby="profilePictureInput">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <!-- form container end -->
 
     </div>
 
