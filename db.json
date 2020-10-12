@@ -71,5 +71,13 @@
         "instructor?": false,
         "github": "http://github.com/eiphyllis",
         "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M6ET0-7c4123c68e97-512"
+    },{
+        "id": 9,
+        "name": "Carlos Barrera",
+        "pronouns": "he/him",
+        "alum?": true,
+        "instructor?": false,
+        "github": "https://github.com/barrera713",
+        "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-UJM5NBACC-3745ea46c23c-512"
     }]
 }
