@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         cardBody.classList.add('card-body')
         h5.className = 'card-title'
-        h5.textContent = person.className
+        h5.textContent = person.name
 
         instructorText.textContent = `Instructor or Alum? ${person['instructor?'] ? 'Instructor' : 'Alum'}`
         pronounText.textContent = ` Pronouns: ${person.pronouns}`
