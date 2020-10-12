@@ -65,6 +65,14 @@
         "profilePicture": "https://avatars2.githubusercontent.com/u/55167237?s=460&u=d5a711e601e50ce415dfeb980cebab48b2ee7a4a&v=4"
     },{
         "id": 8,
+        "name": "Phyllis Njoroge",
+        "pronouns": "she/they",
+        "alum?": true,
+        "instructor?": false,
+        "github": "http://github.com/eiphyllis",
+        "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M6ET0-7c4123c68e97-512"
+    },{
+        "id": 9,
         "name": "Carlos Barrera",
         "pronouns": "he/him",
         "alum?": true,
