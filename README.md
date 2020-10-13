@@ -23,6 +23,8 @@ Sometimes it can help to 'collaspe' larger divs to find a particular div.
 
 We have a static card already in our index.html, this is so you have a frame of reference, feel free to comment it out and dynamically add the other people from our fetch that way Raúl is not on there twice(the world is not ready for two Raúls)
 
+          Please take a look at the data you would get back from every person object. There are a couple of boolean variables that are NOT accesible through dot notation. Again, this lab might feel like a big stretch, follow Personal Empowerment Protocol. Another hint is at the bottom of this README
+          
 ## Fetch and Update DOM with People 
 
 On the `index.html` page, there is a `div` with the `id` "people".
@@ -84,4 +86,7 @@ After all of that, the person card should resemble:
 *changes should update the DOM and be persisted. 
 
 
+          Hint => look up ternary operators, but feel free to ask for help if this becomes confusing. 
+          Hint => look up bracket notation for objects in javascript
+          Hint => div elements can be treated like object to access or even set properties 
 
