@@ -86,6 +86,17 @@ After all of that, the person card should resemble:
 *changes should update the DOM and be persisted. 
 
 
+
+
+
+## Hints Below (Don't Read if you don't want those hints)
+
+
+
+
+
+
+## Hints Below
           Hint => look up ternary operators, but feel free to ask for help if this becomes confusing. 
           Hint => look up bracket notation for objects in javascript
           Hint => div elements can be treated like object to access or even set properties 
