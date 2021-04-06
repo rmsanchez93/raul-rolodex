@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
         h5.textContent = person.name
         h5.setAttribute("id", "person"+person.id)
 
-        instructorText.textContent = `Instructor or Alum? ${person['instructor?'] ? 'Instructor' : 'Alum'}`
+        instructorText.textContent = `Instructor or Alum? ${!!(person['instructor?']) ? 'Instructor' : 'Alum'}`
         pronounText.textContent = ` Pronouns: ${person.pronouns}`
 
-        attendedText.textContent = `Attended Flatiron? ${person['alum?'] ? 'yes' : 'no'}`
+        attendedText.textContent = `Attended Flatiron? ${!!(person['alum?']) ? 'yes' : 'no'}`
 
         a.classList.add("btn", "btn-primary")
         a.href = person.github
