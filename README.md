@@ -1,7 +1,7 @@
 # Raul's Rolodex
 
 Solo lab created for the purpose of practicing fetch. JSON data will include past alumni and instructors in an effort to showcase the underrepresented in tech. 
-
+This Lab is going to be a stretch, try timing yourself and see if you can finish this in an hour and a half for added difficulty.  
 
 ## Create Your Server
 
@@ -11,7 +11,7 @@ data using a JSON server. In order to do this, run the following two commands:
    * `npm install -g json-server`
    * `json-server --watch db.json`
    
-This will create a server storing all of our lost toy data with restful routes
+This will create a server storing all of our people data with restful routes
 at `http://localhost:3000/people`. You can also check out
 `http://localhost:3000/people/:id`
 
@@ -21,8 +21,10 @@ This index.html is heavily relying on bootstrap styling, get comfortable at goin
 Sometimes it can help to 'collaspe' larger divs to find a particular div. 
 **you should NOT have to change anything in the index.html**
 
-We have a static card already in our index.html, this is so you have a frame of reference, feel free to comment it out and dynamically add the other people from our fetch that way Raúl is on there twice(the world is not ready for two Raúls)
+We have a static card already in our index.html, this is so you have a frame of reference, feel free to comment it out and dynamically add the other people from our fetch that way Raúl is not on there twice(the world is not ready for two Raúls)
 
+          Please take a look at the data you would get back from every person object. There are a couple of boolean variables that are NOT accesible through dot notation. Again, this lab might feel like a big stretch, follow Personal Empowerment Protocol. Another hint is at the bottom of this README
+          
 ## Fetch and Update DOM with People 
 
 On the `index.html` page, there is a `div` with the `id` "people".
@@ -53,7 +55,7 @@ The `div` with class "card-body" has child elements:
   **All `p` tags have a class "card-text"**
   
 
-After all of that, the toy card should resemble:
+After all of that, the person card should resemble:
 
 ```html
   <div class="card p-2 m-2" style="width: 18rem;">
@@ -65,5 +67,37 @@ After all of that, the toy card should resemble:
               <p class="card-text">Attended Flatiron?  person_attended_flatiron </p>
               <a href= person_github_url class="btn btn-primary"> Go to person_first_name's GitHub </a>
             </div>
-          </div>
+  </div>
 ```
+
+
+## Add yourself with our Instructors/Alum
+
+* When a user submits the form, a `POST` request is sent to `http://localhost:3000/people` and the new person is added to our people collection.
+* In order to send a POST request via Fetch, give the Fetch a second argument of an object. This object should specify the method as `POST` and also provide the appropriate headers and the JSON-ified data for the request. I removed how a POST Request object should look like, please refer to your notes or previous lab-work.
+
+* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options).
+
+
+## Stretch Goals
+
+* Add an update button for every card
+* the button should make an edit form appear under the person's info, with one input to only update that person's name
+*changes should update the DOM and be persisted. 
+
+
+
+
+
+## Hints Below (Don't Read if you don't want those hints)
+
+
+
+
+
+
+## Hints Below
+          Hint => look up ternary operators, but feel free to ask for help if this becomes confusing. 
+          Hint => look up bracket notation for objects in javascript
+          Hint => div elements can be treated like object to access or even set properties 
+
