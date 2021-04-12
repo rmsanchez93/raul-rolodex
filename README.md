@@ -44,7 +44,6 @@ Each card should have the following child elements:
 The `div` with class "card-body" has child elements: 
   * `h5` tag with a class "card-title" whose text is set to the person's name property
   *  `p` tag that conditionally renders Either Instructor or Not Instructor based on a person's 'instructor?' property
-  *  `p` tag that conditionally renders Either Alum or Not Alum based on a person's 'alum?' property
   *  `p` tag that displays the person's pronouns 
   *  `p` tag that conditionally renders whether or not this person attended Flatiron School. 
   *  `a` with an href set to the person's github, and a class "btn btn-primary" whose text is set to "Go to <person's first name> 's GitHub"
