@@ -62,7 +62,7 @@ After all of that, the person card should resemble:
             <img src=person_image_url class="card-img-top" alt=person_first_name_and_either_alum_instructor>
             <div class="card-body">
               <h5 class="card-title"> person_name </h5>
-              <p class="card-text"> person_insturctor_alum </p>
+              <p class="card-text"> person_insturctor? </p>
               <p class="card-text">Prefered Pronouns: person_pronouns </p>
               <p class="card-text">Attended Flatiron?  person_attended_flatiron </p>
               <a href= person_github_url class="btn btn-primary"> Go to person_first_name's GitHub </a>

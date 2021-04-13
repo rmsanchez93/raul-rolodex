@@ -1,84 +1,94 @@
 {
-    "people":[{
-        "id": 1,
-        "name": "Raul Sanchez",
-        "pronouns": "he/him",
-        "alum?": false,
-        "instructor?": true,
-        "github": "https://github.com/rmsanchez93",
-        "profilePicture": "https://avatars3.githubusercontent.com/u/38088164?s=460&u=6310e60448617354cbecfb7ffcd30e691e095931&v=4"
-    },{
-        "id": 2,
-        "name": "Joe Burks",
-        "pronouns": "he/him",
-        "alum?": true,
-        "instructor?": true,
-        "github": "https://github.com/Joseph-Burks",
-        "profilePicture": "https://avatars3.githubusercontent.com/u/56845745?s=460&u=7974035c20f17528da0cd381492cb7a025d7392a&v=4"
-        },{
-        "id": 3,
-        "name": "Dane Dawson",
-        "pronouns": "he/him",
-        "alum?": true,
-        "instructor?": true,
-        "github": "https://github.com/Dane-Dawson",
-        "profilePicture": "https://avatars0.githubusercontent.com/u/59668332?s=460&u=0c997f6c2db79afc0f2bdda6b3495c8721e251fc&v=4"
-    },{
-        "id": 3,
-        "name": "Lili Rodriguez",
-        "pronouns": "she/her",
-        "alum?": true,
-        "instructor?": false,
-        "github": "https://github.com/lilirdz",
-        "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M4RSA-8524eea6995a-512"
-    },{
-        "id": 4,
-        "name": "Vivian Tran",
-        "pronouns": "she/her",
-        "alum?": true,
-        "instructor?": false,
-        "github": "https://github.com/vivtran94",
-        "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-UPBJ10N2F-b6acd124707f-512"
-    },{
-        "id": 5,
-        "name": "Luis Bernal",
-        "pronouns": "he/him",
-        "alum?": true,
-        "instructor?": false,
-        "github": "https://github.com/LRB8010",
-        "profilePicture": "https://avatars3.githubusercontent.com/u/61534025?s=460&u=970cce92459e701f397f3b23a58a4209278f8bbd&v=4"
-    },{
-        "id": 6,
-        "name": "Stephanie Cheney",
-        "pronouns": "she/her",
-        "alum?": true,
-        "instructor?": false,
-        "github": "https://github.com/steph544",
-        "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M776J-6cc4b93f069c-512"
-    },{
-        "id": 7,
-        "name": "Anam Soomro",
-        "pronouns": "she/her",
-        "alum?": true,
-        "instructor?": false,
-        "github": "https://github.com/anamsoomro",
-        "profilePicture": "https://avatars2.githubusercontent.com/u/55167237?s=460&u=d5a711e601e50ce415dfeb980cebab48b2ee7a4a&v=4"
-    },{
-        "id": 8,
-        "name": "Phyllis Njoroge",
-        "pronouns": "she/they",
-        "alum?": true,
-        "instructor?": false,
-        "github": "http://github.com/eiphyllis",
-        "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M6ET0-7c4123c68e97-512"
-    },{
-        "id": 9,
-        "name": "Carlos Barrera",
-        "pronouns": "he/him",
-        "alum?": true,
-        "instructor?": false,
-        "github": "https://github.com/barrera713",
-        "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-UJM5NBACC-3745ea46c23c-512"
+  "people": [
+    {
+      "id": 1,
+      "name": "JK Totally Raul",
+      "pronouns": "he/him",
+      "alum?": false,
+      "instructor?": true,
+      "github": "https://github.com/rmsanchez93",
+      "profilePicture": "https://avatars3.githubusercontent.com/u/38088164?s=460&u=6310e60448617354cbecfb7ffcd30e691e095931&v=4"
+    },
+    {
+      "id": 2,
+      "name": "Joe Burks",
+      "pronouns": "he/him",
+      "alum?": true,
+      "instructor?": true,
+      "github": "https://github.com/Joseph-Burks",
+      "profilePicture": "https://avatars3.githubusercontent.com/u/56845745?s=460&u=7974035c20f17528da0cd381492cb7a025d7392a&v=4"
+    },
+    {
+      "id": 3,
+      "name": "Dane Dawson",
+      "pronouns": "he/him",
+      "alum?": true,
+      "instructor?": true,
+      "github": "https://github.com/Dane-Dawson",
+      "profilePicture": "https://avatars0.githubusercontent.com/u/59668332?s=460&u=0c997f6c2db79afc0f2bdda6b3495c8721e251fc&v=4"
+    },
+    {
+      "id": 3,
+      "name": "Lili Rodriguez",
+      "pronouns": "she/her",
+      "alum?": true,
+      "instructor?": false,
+      "github": "https://github.com/lilirdz",
+      "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M4RSA-8524eea6995a-512"
+    },
+    {
+      "id": 4,
+      "name": "Vivian Tran",
+      "pronouns": "she/her",
+      "alum?": true,
+      "instructor?": false,
+      "github": "https://github.com/vivtran94",
+      "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-UPBJ10N2F-b6acd124707f-512"
+    },
+    {
+      "id": 5,
+      "name": "Luis Bernal",
+      "pronouns": "he/him",
+      "alum?": true,
+      "instructor?": false,
+      "github": "https://github.com/LRB8010",
+      "profilePicture": "https://avatars3.githubusercontent.com/u/61534025?s=460&u=970cce92459e701f397f3b23a58a4209278f8bbd&v=4"
+    },
+    {
+      "id": 6,
+      "name": "Stephanie Cheney",
+      "pronouns": "she/her",
+      "alum?": true,
+      "instructor?": false,
+      "github": "https://github.com/steph544",
+      "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M776J-6cc4b93f069c-512"
+    },
+    {
+      "id": 7,
+      "name": "Anam Soomro",
+      "pronouns": "she/her",
+      "alum?": true,
+      "instructor?": false,
+      "github": "https://github.com/anamsoomro",
+      "profilePicture": "https://avatars2.githubusercontent.com/u/55167237?s=460&u=d5a711e601e50ce415dfeb980cebab48b2ee7a4a&v=4"
+    },
+    {
+      "id": 8,
+      "name": "Phyllis Njoroge",
+      "pronouns": "she/they",
+      "alum?": true,
+      "instructor?": false,
+      "github": "http://github.com/eiphyllis",
+      "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-U011L6M6ET0-7c4123c68e97-512"
+    },
+    {
+      "id": 9,
+      "name": "Carlos Barrera",
+      "pronouns": "he/him",
+      "alum?": true,
+      "instructor?": false,
+      "github": "https://github.com/barrera713",
+      "profilePicture": "https://ca.slack-edge.com/T02MD9XTF-UJM5NBACC-3745ea46c23c-512"
     },
     {
       "name": "Adam Johnson",
@@ -88,5 +98,15 @@
       "github": "https://github.com/adamwjo",
       "profilePicture": "https://ca.slack-edge.com/T02FZRG24-U01BC94BZDH-e677a9d9a0b7-512",
       "id": 10
-    }]
+    },
+    {
+      "name": "beyonce",
+      "pronouns": "she/her",
+      "alum?": "false",
+      "instructor?": "false",
+      "github": "no",
+      "profilePicture": "data:image/jpeg;base64,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",
+      "id": 11
+    }
+  ]
 }
